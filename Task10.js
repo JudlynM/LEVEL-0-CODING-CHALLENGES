@@ -10,7 +10,8 @@ function commonCharacters(string1 , string2) {
     }  
     for(var i=0; i < string2.length; i++) 
     {
-      if( output[string2.charAt(i)] == 1) {
+      if( output[string2.charAt(i)] == 1) 
+      {
           temp.push(string2.charAt(i));
       }
     }
