@@ -1,8 +1,8 @@
 function printVowels( input ){
 
-        var output = [ ];
+        var output = [ ]; //local variable to "capture" vowels within string parameter.
 
-    for(i=0 ; i < input.length; i++)
+    for(i=0 ; i < input.length; i++) //for-loop iterates through input and pushes all vowel occurence.
     {
 
         switch(input[i])
@@ -27,8 +27,7 @@ function printVowels( input ){
                 output.push(input[i]);
                 break;
             
-            
-            case "A":
+           case "A":
                 output.push(input[i]);
                 break;
     
