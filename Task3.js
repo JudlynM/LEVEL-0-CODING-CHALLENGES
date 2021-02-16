@@ -1,6 +1,6 @@
-function hello(x){
+function hello( input ){
 
-return "Hello " + x + "!";
+return "Hello " + input + "!";
 
 }
 
