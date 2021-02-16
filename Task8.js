@@ -1,18 +1,23 @@
 function timeConverter( value ){
-      var hours = Math.floor(value/60);
-      var minutes = value % 60;
+      
+      var hoursConvert = Math.floor(value/60);
+      var minutesConvert = value % 60;
 
-        if((hours === 1) && (minutes === 1)){
-            return hours + "hour, " + minutes + "minute";
+      hours = hoursConvert.toString();
+      minutes = minutesConvert.toString();
+
+        if((hoursConvert === 1) && (minutesConvert === 1)){
+        return hours + "hour, " + minutes + "minute";
         }
-        else if((hours === 1)){
-            return hours + "hour, " + minutes + "minutes";
+        else if((hoursConvert === 1)){
+        return hours + "hour, " + minutes + "minutes";
         }
-        else if(minutes === 1){
-            return hours + "hours, " + minutes + "minute"; 
+        else if(minutesConvert === 1){
+        return hours + "hours, " + minutes + "minute"; 
         }
         else{
-            return hours + "hours, " + minutes + "minutes";
+        return hours + "hours, " + minutes + "minutes";
         }
 }
+
 console.log(timeConverter(71));
