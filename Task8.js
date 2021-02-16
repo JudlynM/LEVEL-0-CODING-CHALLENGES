@@ -1,20 +1,18 @@
 function timeConverter( value ){
+      var hours = Math.floor(value/60);
+      var minutes = value % 60;
 
-if (value < 0){
-
-    console.log("Value should be 0 or above.");
-
-}
-
-else{
-    hours = value / 60;
-    hoursRounded = Math.round(hours);
-
-    minutes = ((hours - hoursRounded) * 60);
-    minutesRounded = Math.round(minutes);
-
- return hoursRounded + "hour(s), " + minutesRounded + "minute(s)"  ;
-    }
-
+        if((hours === 1) && (minutes === 1)){
+            return hours + "hour, " + minutes + "minute";
+        }
+        else if((hours === 1)){
+            return hours + "hour, " + minutes + "minutes";
+        }
+        else if(minutes === 1){
+            return hours + "hours, " + minutes + "minute"; 
+        }
+        else{
+            return hours + "hours, " + minutes + "minutes";
+        }
 }
 console.log(timeConverter(71));
