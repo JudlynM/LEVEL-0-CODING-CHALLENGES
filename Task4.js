@@ -1,5 +1,5 @@
-function evenOrOdd( x ){
-    if(x % 2 == 0){
+function evenOrOdd( number ){
+    if(number % 2 === 0){
         console.log("Even");
     }
     else{
