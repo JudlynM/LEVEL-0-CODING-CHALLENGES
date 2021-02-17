@@ -1,8 +1,8 @@
 function printVowels( input ){
 
-        var output = [ ]; //local variable to "capture" vowels within string parameter.
+        var output = [ ]; 
 
-    for(i=0 ; i < input.length; i++) //for-loop iterates through input and pushes all vowel occurence.
+    for(i=0 ; i < input.length; i++) 
     {
 
         switch(input[i])
@@ -50,7 +50,7 @@ function printVowels( input ){
         }
 
     }
-    return output;
+    return output.toString();
 
 }
 
