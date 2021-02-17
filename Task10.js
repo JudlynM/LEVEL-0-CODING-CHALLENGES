@@ -16,7 +16,7 @@ function commonCharacters(string1 , string2) {
       }    
     }
     
-    output = temp.join(" ");
+    output = temp.join(", ");
     console.log(output);
   }
   
