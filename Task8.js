@@ -7,16 +7,16 @@ function timeConverter( value ){
       minutes = minutesConvert.toString();
 
         if((hoursConvert === 1) && (minutesConvert === 1)){
-        return hours + "hour, " + minutes + "minute";
+        return hours + " hour, " + minutes + " minute";
         }
         else if((hoursConvert === 1)){
-        return hours + "hour, " + minutes + "minutes";
+        return hours + " hour, " + minutes + " minutes";
         }
         else if(minutesConvert === 1){
-        return hours + "hours, " + minutes + "minute"; 
+        return hours + " hours, " + minutes + " minute"; 
         }
         else{
-        return hours + "hours, " + minutes + "minutes";
+        return hours + " hours, " + minutes + " minutes";
         }
 }
 
