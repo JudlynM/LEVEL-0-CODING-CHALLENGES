@@ -17,7 +17,7 @@ function commonCharacters(string1 , string2) {
     }
     
     output = temp.join(", ");
-    console.log(output);
+    console.log("Common letters: " + output);
   }
   
   commonCharacters("house", "computers");
