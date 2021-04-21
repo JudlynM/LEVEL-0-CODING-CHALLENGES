@@ -1,19 +1,13 @@
 
-/*Utilizing the 'arguments' object, we are able to handle the case of 
-the function taking in an unknown number of numbers as parameters*/
+function maxNumber() {
+	var max = -Infinity;
 
-function maxNumber( ) {
+	for (let i = 0; i < arguments.length; i++) {
+		if (arguments[i] > max) {
+			max = arguments[i];
+		}
+	}
+	return max;
+}
 
-    var max = -Infinity; //minimum case set. To be overridden in function.
-
-    for (var i = 0; i < arguments.length; i++) { 
-        if (arguments[i] > max) {
-        max = arguments[i];
-      }
-    }
-    return max;
-  }
-
-  console.log(maxNumber(2,50,-150,2500));
-
-
+console.log(maxNumber(2, 5000, -150, 2500));
