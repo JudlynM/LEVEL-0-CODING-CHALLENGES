@@ -1,10 +1,9 @@
-function celsiusToFahrenheit( value ){
-    return ((value/5) * 9) + 32;
+function toFahrenheit(celsius) {
+	return (celsius / 5) * 9 + 32;
 }
-console.log(celsiusToFahrenheit(180));
+console.log(toFahrenheit(180));
 
-
-function FahrenheitTocelsius( value ){
-    return (((value-32) * 5) / 9);
+function toCelsius(fahrenheit) {
+	return ((fahrenheit - 32) * 5) / 9;
 }
-console.log(FahrenheitTocelsius(356));
+console.log(toCelsius(356));
