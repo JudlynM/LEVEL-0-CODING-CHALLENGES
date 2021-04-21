@@ -1,10 +1,9 @@
-function evenOrOdd( number ){
-    if(number % 2 === 0){
-        console.log("Even");
-    }
-    else{
-        console.log("Odd");
-    }
+function evenOrOdd(number) {
+	if (number % 2 === 0) {
+		console.log("even");
+	} else {
+		console.log("odd");
+	}
 }
 
 evenOrOdd(155);
